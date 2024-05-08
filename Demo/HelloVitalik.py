@@ -16,6 +16,7 @@ provider_main = Web3.HTTPProvider(ALCHEMY_MAINNET_URL)
 #provider_test = Web3.HTTPProvider(ALCHEMY_SEPOLIA_URL)
 w3_main = Web3(provider_main)
 #w3_test = Web3(provider_test)
+
 # 1. 查询vitalik在主网和Sepolia测试网的ETH余额
 print("1. 查询vitalik在主网和Sepolia测试网的ETH余额")
 balance_main = w3_main.eth.get_balance("vitalik.eth")
